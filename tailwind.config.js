@@ -12,7 +12,7 @@ module.exports = {
         DEFAULT: "1.5rem",
         sm: "2rem",
         lg: "4rem",
-        xl: "8rem",
+        xl: "10.5rem",
       },
     },
     extend: {
