@@ -28,15 +28,15 @@ import { identifyLink, Link } from 'src/app/models';
         <ul>
           <ng-container *ngFor="let link of links; trackBy: identifyLink">
             <li>
-              <a [routerLink]="link.path">{{ link.name }}</a>
+              <a class="animated-link" [routerLink]="link.path">{{
+                link.name
+              }}</a>
             </li>
           </ng-container>
 
           <!-- login -->
-          <li>
-            <a class="w-full block border-t pt-6 text-fill-700" outerLink="/"
-              >Login</a
-            >
+          <li class="w-full block border-t pt-6">
+            <a routerLink="/" class=" text-fill-700 animated-link hover:text-fill-900">Login</a>
           </li>
           <!-- end login -->
         </ul>
@@ -64,7 +64,7 @@ export class NavOverlayComponent {
   @Output() openChange = new EventEmitter<boolean>();
 
   @Input()
-  links!: Link[] ;
+  links!: Link[];
 
   onOverlay() {
     this.openChange.emit(!this.open);

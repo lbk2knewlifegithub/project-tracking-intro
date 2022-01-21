@@ -29,10 +29,6 @@ import { Link } from 'src/app/models';
 export class HeaderComponent {
   openNavOverlay = false;
 
-  toggleNavOverlay() {
-    this.openNavOverlay = !this.openNavOverlay;
-  }
-
   links: Link[] = [
     {
       name: 'product',

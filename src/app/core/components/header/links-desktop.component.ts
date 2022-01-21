@@ -9,7 +9,7 @@ import { listAnimation } from 'src/app/shared';
     <ul>
       <ng-container *ngFor="let link of links; trackBy: identifyLink">
         <li>
-          <a [routerLink]="link.path">{{ link.name }}</a>
+          <a class="animated-link" [routerLink]="link.path">{{ link.name }}</a>
         </li>
       </ng-container>
 
@@ -19,7 +19,7 @@ import { listAnimation } from 'src/app/shared';
 
       <!-- login -->
       <li>
-        <a class="w-full block border-t text-fill-700" outerLink="/">Login</a>
+        <a routerLink="/" class=" text-fill-700 hover:text-fill-900 animated-link">Login</a>
       </li>
       <!-- end login -->
     </ul>
