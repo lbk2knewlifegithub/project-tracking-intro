@@ -15,7 +15,26 @@
   h6 {
     @apply font-heading;
   }
+  h1 {
+    @apply text-5xl text-[40px] md:text-5xl;
+  }
 }
 
 @layer components {
+  .badge {
+    @apply rounded-full py-1 px-3 font-heading font-bold uppercase;
+  }
+
+  .badge-dark {
+    @apply bg-fill-900 text-white;
+  }
+
+  .btn {
+    @apply inline-block py-3 px-5 rounded-lg shadow-md text-sm font-bold font-heading;
+    @apply md:text-base;
+  }
+
+  .btn-danger {
+    @apply bg-danger-900 text-white px-8;
+  }
 }
