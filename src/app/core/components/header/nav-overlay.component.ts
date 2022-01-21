@@ -64,20 +64,7 @@ export class NavOverlayComponent {
   @Output() openChange = new EventEmitter<boolean>();
 
   @Input()
-  links: Link[] = [
-    {
-      name: 'product',
-      path: '/',
-    },
-    {
-      name: 'Features',
-      path: '/',
-    },
-    {
-      name: 'Pricing',
-      path: '/',
-    },
-  ];
+  links!: Link[] ;
 
   onOverlay() {
     this.openChange.emit(!this.open);
